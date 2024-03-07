@@ -48,7 +48,3 @@ if __name__ == "__main__":
 
     driver = create_driver()
     asyncio.run(main(crypto_data))
-
-
-# TODO : Check for change symbol of currency for "Prix actuel"
-# TODO : Change float display (.2f%)
