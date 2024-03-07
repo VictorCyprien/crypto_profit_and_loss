@@ -1,0 +1,32 @@
+[
+    {
+        "name":"PAAL AI",
+        "hash":"paal-ai",
+        "buy_price": [0.14, 0.16, 0.20],
+        "quantity": [680, 600, 500]
+    },
+    {
+        "name":"Fetch.AI",
+        "hash":"fetch",
+        "buy_price": [0.70],
+        "quantity": [300]
+    },
+    {
+        "name":"0x0",
+        "hash":"0x0-ai-ai-smart-contract",
+        "buy_price": [0.10, 0.15],
+        "quantity": [120, 130]
+    },
+    {
+        "name":"AVAX",
+        "hash":"avalanche",
+        "buy_price": [5, 40],
+        "quantity": [30, 3]
+    },
+    {
+        "name": "HashMind",
+        "hash": "eth-0xa849cd6239906f23b63ba34441b73a5c6eba8a00",
+        "buy_price": [2.15, 0.75],
+        "quantity": [50, 20]
+    }
+]
