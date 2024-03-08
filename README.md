@@ -18,7 +18,7 @@ Here you can see your profits/losses in dollars and as a percentage for a single
 
 __Note__ :
 
-- For Windows users, it is recommanded to use a UNIX bash (like [Cygwin](https://www.cygwin.com/)).
+- For Windows users, it is recommanded to use a UNIX bash (like [Cygwin](https://www.cygwin.com/)) but you can use cmd.exe for Windows
 - For Mac, just open a new terminal
 
 3. Install / Create a new virtual environement
@@ -30,7 +30,8 @@ This allows you to create isolated Python environments to manage project-specifi
 
 4. Activate the environment
 
-- For Windows : `source venv/Script/activate`
+- For Windows (with Cygwin): `source venv/Script/activate`
+- For Windows (with cmd): `.\venv\Script\activate`
 - For Mac : `source venv/bin/activate`
 
 5. Install the librairies
