@@ -1,8 +1,11 @@
 import time
 import os
+import sys
 from typing import List, Dict
 
 import asyncio
+
+from pywintypes import com_error
 
 from helpers import (
     set_config, 
@@ -10,6 +13,7 @@ from helpers import (
     load_data, 
     create_excel_file, 
     load_workbook,
+    close_workbook,
     get_nb_rows_one_crypto,
     get_coin_price,
     write_in_excel
@@ -47,4 +51,15 @@ if __name__ == "__main__":
         create_excel_file(crypto_data)
 
     driver = create_driver()
-    asyncio.run(main(crypto_data))
+    try:
+        asyncio.run(main(crypto_data))
+    except KeyboardInterrupt:
+        print("Sortie du script...")
+        close_workbook()
+    except com_error:
+        print("Excel viens d'être fermé, sortie du script...")
+    except Exception as error:
+        print(error)
+        print("Une erreur est survenue")
+    finally:
+        sys.exit()
