@@ -75,6 +75,13 @@ def load_workbook() -> Sheet:
     return sheet
 
 
+def close_workbook():
+    # Close Excel File
+    wb = xw.Book('Final.xlsx')
+    wb.save()
+    wb.close()
+
+
 def get_nb_rows_one_crypto(data: List[Dict], one_crypto_hash) -> int:
     return len([one_crypto_in_data["buy_price"] for one_crypto_in_data in data if one_crypto_in_data["hash"] == one_crypto_hash][0])
 
